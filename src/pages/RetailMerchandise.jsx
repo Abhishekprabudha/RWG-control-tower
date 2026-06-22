@@ -1,0 +1,24 @@
+import { motion } from 'framer-motion';
+import { CircleDollarSign, PackagePlus, ShoppingBag, TrendingUp } from 'lucide-react';
+import ForecastChart from '../components/ForecastChart';
+import MetricCard from '../components/MetricCard';
+import { useDemo } from '../context/DemoContext';
+import { formatRM } from '../utils/calculations';
+
+export default function RetailMerchandise() {
+  const { data, runScenario, approveRetailTransfer, notify } = useDemo();
+  const fastest = [...data.retailSkus].sort((a,b) => b.hourly_sales_velocity - a.hourly_sales_velocity)[0];
+  const chartData = fastest.history.map((v, i) => ({ time: `${8 + i * 2}:00`, velocity: v }));
+  return (
+    <div className="space-y-6">
+      <div className="glass-panel rounded-[2rem] p-7"><p className="text-sm font-bold uppercase tracking-[0.32em] text-amber-200">Retail Merchandise Intelligence Agent</p><h1 className="mt-2 text-4xl font-black text-white">Turn retail velocity into automated action</h1><p className="mt-3 max-w-4xl text-slate-300">The agent senses hourly sales velocity, predicts stockout time and orchestrates store transfers before revenue is lost.</p></div>
+      <div className="grid grid-cols-4 gap-4"><MetricCard title="Fastest SKU velocity" value={fastest.hourly_sales_velocity} suffix="/hr" icon={TrendingUp} risk="red" /><MetricCard title="Stockout window" value={Math.round(fastest.predicted_stockout_hours * 10) / 10} suffix=" hrs" icon={ShoppingBag} risk="red" /><MetricCard title="Revenue at risk" value={Math.round(fastest.revenue_at_risk_rm / 1000)} prefix="RM " suffix="K" icon={CircleDollarSign} risk="amber" /><MetricCard title="Recommended transfer" value={fastest.recommended_transfer_qty} suffix=" units" icon={PackagePlus} risk="green" /></div>
+      <div className="grid grid-cols-[1fr_430px] gap-6">
+        <section className="grid grid-cols-3 gap-4">
+          {data.retailSkus.map((sku, i) => <motion.div key={sku.sku_id} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }} className="card-glow rounded-3xl border border-white/10 bg-slate-950/45 p-5"><div className="flex items-start justify-between"><div><h3 className="text-lg font-black text-white">{sku.sku_name}</h3><p className="mt-1 text-sm text-slate-400">{sku.store}</p></div><span className="rounded-full bg-amber-300/10 px-3 py-1 text-xs font-bold text-amber-100">{sku.hourly_sales_velocity}/hr</span></div><div className="mt-5 grid grid-cols-2 gap-2 text-sm"><div className="rounded-2xl bg-white/[0.04] p-3"><p className="text-slate-400">Stock</p><p className="font-black text-white">{sku.current_stock}</p></div><div className="rounded-2xl bg-white/[0.04] p-3"><p className="text-slate-400">Stockout</p><p className="font-black text-white">{sku.predicted_stockout_hours}h</p></div><div className="rounded-2xl bg-white/[0.04] p-3"><p className="text-slate-400">Transfer</p><p className="font-black text-white">{sku.recommended_transfer_qty}</p></div><div className="rounded-2xl bg-white/[0.04] p-3"><p className="text-slate-400">Risk</p><p className="font-black text-amber-100">{formatRM(sku.revenue_at_risk_rm)}</p></div></div></motion.div>)}
+        </section>
+        <section className="glass-panel rounded-3xl p-6"><h3 className="text-2xl font-black text-white">Viral SKU scenario</h3><p className="mt-2 text-slate-300">SkyWorlds Dragon Plush goes viral during weekend event. AI detects 3x sales velocity and recommends transfer, replenishment PO and shelf allocation change.</p><div className="mt-5 rounded-3xl border border-white/10 bg-slate-950/45 p-4"><ForecastChart data={chartData} type="line" dataKeys={["velocity"]} height={230} /></div><div className="mt-5 space-y-2 text-sm text-slate-300"><p className="rounded-2xl bg-white/[0.04] p-3">Transfer 120 units from SkyAvenue Store B to SkyWorlds Exit Store.</p><p className="rounded-2xl bg-white/[0.04] p-3">Trigger replenishment PO and pre-position Sunday batch.</p><p className="rounded-2xl bg-white/[0.04] p-3">Change shelf allocation at exit flow.</p></div><div className="mt-5 grid grid-cols-2 gap-3"><button onClick={() => runScenario('viral')} className="gold-button rounded-2xl px-4 py-3 font-black">Trigger Viral SKU Surge</button><button onClick={() => approveRetailTransfer(fastest)} className="rounded-2xl border border-emerald-300/25 bg-emerald-300/10 px-4 py-3 font-bold text-emerald-100">Approve Transfer</button><button onClick={() => notify(`Replenishment PO created for ${fastest.sku_name}`)} className="rounded-2xl border border-sky-300/25 bg-sky-300/10 px-4 py-3 font-bold text-sky-100">Create Replenishment PO</button><button onClick={() => notify(`Lost revenue simulation: ${formatRM(fastest.revenue_at_risk_rm)} at risk if no action in ${fastest.predicted_stockout_hours} hours`)} className="rounded-2xl border border-white/10 px-4 py-3 font-bold text-slate-200">Simulate Lost Revenue</button></div></section>
+      </div>
+    </div>
+  );
+}
