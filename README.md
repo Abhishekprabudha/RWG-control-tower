@@ -69,10 +69,10 @@ http://localhost:5173
 npm run build
 ```
 
-The static site will be generated in:
+The static GitHub Pages site will be generated in:
 
 ```bash
-dist/
+docs/
 ```
 
 ## Preview production build
@@ -92,24 +92,17 @@ npm install
 npm run build
 ```
 
-2. Rename or copy `dist` to `docs`:
-
-```bash
-rm -rf docs
-cp -r dist docs
-```
-
-3. Commit and push to GitHub.
-4. In GitHub, go to **Settings → Pages**.
-5. Under **Build and deployment**, choose:
+2. Commit and push the regenerated `docs/` folder.
+3. In GitHub, go to **Settings → Pages**.
+4. Under **Build and deployment**, choose:
    - Source: `Deploy from a branch`
    - Branch: `main`
    - Folder: `/docs`
-6. Save.
+5. Save.
 
 ### Option 2: GitHub Actions
 
-You can also deploy the `dist/` folder using any standard Vite GitHub Pages workflow. The project uses `base: './'` in `vite.config.js`, so assets resolve correctly on GitHub Pages repository paths.
+You can also deploy the generated static output using any standard Vite GitHub Pages workflow. The project builds directly to `docs/` and uses `base: './'` in `vite.config.js`, so assets resolve correctly on GitHub Pages repository paths.
 
 ## Demo storyline for a 20-minute client presentation
 
