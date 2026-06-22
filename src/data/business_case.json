@@ -1,0 +1,10 @@
+[
+  {"metric_id":"BC-001","metric_name":"Inventory excess reduced","baseline":100,"current":86,"improvement":"14%","value_rm":420000,"category":"Working Capital"},
+  {"metric_id":"BC-002","metric_name":"Manual GRN hours avoided","baseline":520,"current":340,"improvement":"180 hours","value_rm":126000,"category":"Process Productivity"},
+  {"metric_id":"BC-003","metric_name":"Stockout risk avoided","baseline":18,"current":7,"improvement":"11 incidents","value_rm":580000,"category":"Revenue & Service"},
+  {"metric_id":"BC-004","metric_name":"Maverick spend identified","baseline":0,"current":680000,"improvement":"RM 680K","value_rm":680000,"category":"Commercial Control"},
+  {"metric_id":"BC-005","metric_name":"Supplier SLA exceptions found","baseline":0,"current":23,"improvement":"23 cases","value_rm":165000,"category":"Commercial Control"},
+  {"metric_id":"BC-006","metric_name":"Retail revenue protected","baseline":0,"current":312000,"improvement":"RM 312K","value_rm":312000,"category":"Revenue & Service"},
+  {"metric_id":"BC-007","metric_name":"Ride downtime avoided","baseline":8,"current":3,"improvement":"5 events","value_rm":240000,"category":"Revenue & Service"},
+  {"metric_id":"BC-008","metric_name":"Procurement cycle time reduced","baseline":7,"current":3,"improvement":"57%","value_rm":198000,"category":"Process Productivity"}
+]

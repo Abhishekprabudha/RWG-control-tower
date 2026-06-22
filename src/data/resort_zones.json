@@ -1,0 +1,11 @@
+[
+  {"zone_id":"Z-001","zone_name":"Central Warehouse","zone_type":"Warehouse","risk_level":"Amber","current_status":"Prioritising cold-chain putaway","active_alerts":3,"inventory_health":78,"service_level":96},
+  {"zone_id":"Z-002","zone_name":"Receiving Gate","zone_type":"Inbound Logistics","risk_level":"Red","current_status":"Concert surge queue forming","active_alerts":5,"inventory_health":72,"service_level":89},
+  {"zone_id":"Z-003","zone_name":"First World Hotel","zone_type":"Hotel","risk_level":"Amber","current_status":"92% occupancy, linen demand rising","active_alerts":2,"inventory_health":81,"service_level":94},
+  {"zone_id":"Z-004","zone_name":"Genting Grand","zone_type":"Hotel","risk_level":"Green","current_status":"VIP occupancy stable","active_alerts":1,"inventory_health":88,"service_level":98},
+  {"zone_id":"Z-005","zone_name":"F&B Outlets","zone_type":"F&B","risk_level":"Red","current_status":"Bottled drinks and frozen fries spike","active_alerts":6,"inventory_health":66,"service_level":91},
+  {"zone_id":"Z-006","zone_name":"SkyAvenue Retail","zone_type":"Retail","risk_level":"Amber","current_status":"Viral SKU velocity detected","active_alerts":4,"inventory_health":74,"service_level":93},
+  {"zone_id":"Z-007","zone_name":"Theme Parks","zone_type":"Guest Experience","risk_level":"Amber","current_status":"Rain poncho and plush demand up","active_alerts":4,"inventory_health":70,"service_level":92},
+  {"zone_id":"Z-008","zone_name":"Maintenance Warehouse","zone_type":"Engineering","risk_level":"Amber","current_status":"Ride hydraulic seal below reorder point","active_alerts":2,"inventory_health":76,"service_level":95},
+  {"zone_id":"Z-009","zone_name":"Supplier Network","zone_type":"External Supply","risk_level":"Amber","current_status":"Three suppliers at SLA watch","active_alerts":3,"inventory_health":80,"service_level":90}
+]

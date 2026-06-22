@@ -1,0 +1,9 @@
+[
+  {"sku_id":"WHS-001","sku_name":"Bottled water","location":"Central Warehouse","quantity":5200,"min_required":4600,"max_capacity":9000,"recommended_action":"Move 40 cases to Theme Park F&B","transfer_target":"Theme Park F&B"},
+  {"sku_id":"WHS-001A","sku_name":"Bottled water","location":"SkyAvenue Retail","quantity":980,"min_required":520,"max_capacity":1500,"recommended_action":"Release 40 cases to Theme Park F&B","transfer_target":"Theme Park F&B"},
+  {"sku_id":"WHS-001B","sku_name":"Bottled water","location":"Theme Park F&B","quantity":240,"min_required":510,"max_capacity":1200,"recommended_action":"Receive transfer before 3 PM","transfer_target":"Central Warehouse"},
+  {"sku_id":"WHS-002","sku_name":"Linen","location":"First World Hotel","quantity":7600,"min_required":6900,"max_capacity":12000,"recommended_action":"Delay non-critical transfer due to rain","transfer_target":"Genting Grand"},
+  {"sku_id":"WHS-003","sku_name":"Frozen fries","location":"Banquet Kitchen","quantity":640,"min_required":900,"max_capacity":2200,"recommended_action":"Prioritise cold-chain movement before 6 PM","transfer_target":"SkyWorlds F&B"},
+  {"sku_id":"WHS-004","sku_name":"SkyWorlds Dragon Plush","location":"SkyAvenue Retail","quantity":420,"min_required":200,"max_capacity":700,"recommended_action":"Transfer 120 units to SkyWorlds exit store","transfer_target":"Theme Park Merchandise Store"},
+  {"sku_id":"WHS-005","sku_name":"Ride hydraulic seal","location":"Maintenance Warehouse","quantity":5,"min_required":12,"max_capacity":40,"recommended_action":"Reorder before predicted maintenance window","transfer_target":"M&E Ride Parts Asia"}
+]

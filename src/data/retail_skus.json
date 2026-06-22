@@ -1,0 +1,8 @@
+[
+  {"sku_id":"RTL-001","sku_name":"SkyWorlds Dragon Plush","store":"SkyWorlds Exit Store","current_stock":86,"hourly_sales_velocity":42,"predicted_stockout_hours":2.1,"lead_time_weeks":2,"recommended_transfer_qty":120,"revenue_at_risk_rm":28600,"history":[8,11,14,21,29,42]},
+  {"sku_id":"RTL-002","sku_name":"Limited Edition T-shirt","store":"SkyAvenue Store A","current_stock":240,"hourly_sales_velocity":18,"predicted_stockout_hours":13.3,"lead_time_weeks":3,"recommended_transfer_qty":60,"revenue_at_risk_rm":10800,"history":[9,10,12,14,16,18]},
+  {"sku_id":"RTL-003","sku_name":"Character Mug","store":"SkyAvenue Store B","current_stock":310,"hourly_sales_velocity":12,"predicted_stockout_hours":25.8,"lead_time_weeks":2,"recommended_transfer_qty":0,"revenue_at_risk_rm":6200,"history":[7,8,9,10,11,12]},
+  {"sku_id":"RTL-004","sku_name":"Theme Park Cap","store":"Theme Park Merchandise Store","current_stock":145,"hourly_sales_velocity":22,"predicted_stockout_hours":6.6,"lead_time_weeks":2,"recommended_transfer_qty":80,"revenue_at_risk_rm":14200,"history":[11,14,16,18,20,22]},
+  {"sku_id":"RTL-005","sku_name":"Rain Poncho","store":"SkyAvenue Pop-up","current_stock":520,"hourly_sales_velocity":38,"predicted_stockout_hours":13.7,"lead_time_weeks":1,"recommended_transfer_qty":160,"revenue_at_risk_rm":18800,"history":[10,12,16,24,33,38]},
+  {"sku_id":"RTL-006","sku_name":"Glow Wand","store":"Arena of Stars Kiosk","current_stock":190,"hourly_sales_velocity":31,"predicted_stockout_hours":6.1,"lead_time_weeks":2,"recommended_transfer_qty":90,"revenue_at_risk_rm":15600,"history":[12,15,18,22,28,31]}
+]

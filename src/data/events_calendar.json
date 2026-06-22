@@ -1,0 +1,8 @@
+[
+  {"event_id":"EVT-2026-0711","date":"2026-07-11","event_name":"Arena of Stars Concert Night","event_type":"Concert","expected_footfall":72000,"demand_multiplier":1.38,"affected_categories":["Beverages","Frozen Food","Merchandise","Receiving Gate"]},
+  {"event_id":"EVT-2026-0718","date":"2026-07-18","event_name":"School Holiday Peak Weekend","event_type":"School Holiday","expected_footfall":85000,"demand_multiplier":1.42,"affected_categories":["F&B","Linen","Retail","Theme Park"]},
+  {"event_id":"EVT-2026-0815","date":"2026-08-15","event_name":"CNY Promo Planning Window","event_type":"CNY","expected_footfall":98000,"demand_multiplier":1.55,"affected_categories":["Retail","F&B","Hotel Amenities"]},
+  {"event_id":"EVT-2026-0821","date":"2026-08-21","event_name":"Hari Raya Long Stay Weekend","event_type":"Hari Raya","expected_footfall":76000,"demand_multiplier":1.31,"affected_categories":["Halal Meat","Bakery","Housekeeping"]},
+  {"event_id":"EVT-2026-0904","date":"2026-09-04","event_name":"Long Weekend Family Push","event_type":"Long Weekend","expected_footfall":92000,"demand_multiplier":1.46,"affected_categories":["Drinks","Merchandise","Queue Operations"]},
+  {"event_id":"EVT-2026-0919","date":"2026-09-19","event_name":"Heavy Rain Indoor Diversion","event_type":"Rainy Day","expected_footfall":68000,"demand_multiplier":1.24,"affected_categories":["Rain Poncho","Indoor Retail","Logistics Route Risk"]}
+]

@@ -1,0 +1,5 @@
+[
+  {"truck_id":"RWG-IN-4821","supplier_id":"SUP-001","manifest_id":"MF-77821","arrival_time":"2026-07-11 05:42","po_id":"PO-FNB-2026-1048","items":["Frozen fries","Fresh vegetables","Bottled drinks","Bakery buns"],"temperature":2.8,"seal_status":"Intact","damage_detected":"2 damaged cartons","grn_status":"Pending scan","exception_status":"Open"},
+  {"truck_id":"RWG-IN-4828","supplier_id":"SUP-002","manifest_id":"MF-77835","arrival_time":"2026-07-11 06:10","po_id":"PO-FNB-2026-1049","items":["Bottled water","Coffee beans"],"temperature":7.1,"seal_status":"Intact","damage_detected":"None","grn_status":"Pending scan","exception_status":"None"},
+  {"truck_id":"RWG-IN-4833","supplier_id":"SUP-004","manifest_id":"MF-77849","arrival_time":"2026-07-11 07:05","po_id":"PO-RTL-2026-2104","items":["SkyWorlds Dragon Plush","Theme Park Cap","Glow Wand"],"temperature":22.4,"seal_status":"Intact","damage_detected":"None","grn_status":"Queued","exception_status":"None"}
+]

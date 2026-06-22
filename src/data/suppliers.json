@@ -1,0 +1,10 @@
+[
+  {"supplier_id":"SUP-001","supplier_name":"Genting Fresh Foods Sdn Bhd","category":"Fresh & Frozen F&B","sla_score":92,"delivery_reliability":94,"contract_status":"Active","renewal_date":"2026-09-20","risk_score":22,"compliance_status":"Halal / HACCP compliant","price_index":98},
+  {"supplier_id":"SUP-002","supplier_name":"Highland Beverages","category":"Beverages","sla_score":94,"delivery_reliability":96,"contract_status":"Active","renewal_date":"2026-10-05","risk_score":18,"compliance_status":"Compliant","price_index":96},
+  {"supplier_id":"SUP-003","supplier_name":"Premium Linen Malaysia","category":"Hotel Linen","sla_score":83,"delivery_reliability":84,"contract_status":"Renewal due","renewal_date":"2026-08-12","risk_score":44,"compliance_status":"Compliant","price_index":104},
+  {"supplier_id":"SUP-004","supplier_name":"SkyRetail Merchandise Co.","category":"Retail Merchandise","sla_score":88,"delivery_reliability":82,"contract_status":"Active","renewal_date":"2026-11-14","risk_score":35,"compliance_status":"Compliant","price_index":101},
+  {"supplier_id":"SUP-005","supplier_name":"M&E Ride Parts Asia","category":"Maintenance Spares","sla_score":76,"delivery_reliability":73,"contract_status":"Renewal due","renewal_date":"2026-08-25","risk_score":61,"compliance_status":"Compliant with exceptions","price_index":112},
+  {"supplier_id":"SUP-006","supplier_name":"Capex Build Partners","category":"Capex Works","sla_score":81,"delivery_reliability":79,"contract_status":"Active","renewal_date":"2027-01-31","risk_score":48,"compliance_status":"Insurance pending update","price_index":108},
+  {"supplier_id":"SUP-007","supplier_name":"Cleaning Supplies MY","category":"Janitorial & Dry Goods","sla_score":87,"delivery_reliability":89,"contract_status":"Active","renewal_date":"2026-12-18","risk_score":29,"compliance_status":"Compliant","price_index":99},
+  {"supplier_id":"SUP-008","supplier_name":"IT Hardware Distributor","category":"IT Hardware","sla_score":79,"delivery_reliability":77,"contract_status":"Expired line items","renewal_date":"2026-07-30","risk_score":66,"compliance_status":"Partial compliance","price_index":115}
+]

@@ -1,0 +1,7 @@
+[
+  {"po_id":"PO-FNB-2026-1048","item_id":"FNB-003","supplier_id":"SUP-001","quantity":1200,"status":"Draft","created_by":"F&B Procurement Agent","approval_status":"Awaiting approval","expected_delivery":"2026-07-11 08:00","value_rm":45840},
+  {"po_id":"PO-FNB-2026-1049","item_id":"FNB-001","supplier_id":"SUP-002","quantity":3200,"status":"Draft","created_by":"F&B Procurement Agent","approval_status":"Awaiting approval","expected_delivery":"2026-07-11 06:30","value_rm":50560},
+  {"po_id":"PO-FNB-2026-1050","item_id":"FNB-006","supplier_id":"SUP-001","quantity":850,"status":"Draft","created_by":"F&B Procurement Agent","approval_status":"Awaiting approval","expected_delivery":"2026-07-11 07:15","value_rm":6205},
+  {"po_id":"PO-RTL-2026-2104","item_id":"RTL-001","supplier_id":"SUP-004","quantity":240,"status":"Recommended","created_by":"Retail Intelligence Agent","approval_status":"Awaiting approval","expected_delivery":"2026-07-12 10:00","value_rm":38400},
+  {"po_id":"PO-MNT-2026-3120","item_id":"MNT-001","supplier_id":"SUP-005","quantity":16,"status":"Recommended","created_by":"Maintenance Spares Agent","approval_status":"Awaiting approval","expected_delivery":"2026-07-13 12:00","value_rm":62400}
+]
